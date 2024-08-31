@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
-// Push the max to the last by adjacent swap
-void selectionSort(int arr[], int n)
+// take an element placed it in its correct order
+void insertionSort(int arr[], int n)
 {
     for (int i = 0; i < n; i++)
     {
@@ -26,7 +26,7 @@ int main()
 {
     int arr[] = {13, 46, 24, 52, 20, 9};
     int n = sizeof(arr) / sizeof(arr[0]);
-    selectionSort(arr, n);
+    insertionSort(arr, n);
     printArray(arr, n);
     return 0;
 }
